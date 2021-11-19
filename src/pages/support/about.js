@@ -5,7 +5,7 @@ import Seo from "../../components/seo"
 
 const About = () => (
   <Layout>
-    <Seo title="🦊 About Craig " />
+    <Seo title="About Craig 🦊" />
     <h1>About Craig</h1>
     <p>
       I'm a front-end developer and I make websites there using HTML, CSS, and

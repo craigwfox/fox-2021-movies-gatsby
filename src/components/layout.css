@@ -595,3 +595,13 @@ pre tt:after {
     font-size: 100%;
   }
 }
+:root {
+  --clr-bg: 266, 38%, 14%;
+  --clr-main: 266, 53%, 9%;
+  --clr-t-title: palegoldenrod;
+  --clr-t-accent: lightseagreen;
+  --clr-border: lightgreen;
+  --font-main: 'Roboto', sans-serif;
+  --font-accent: 'Roboto Condensed', sans-serif;
+  --font-display: 'Alfa Slab One', cursive;
+}
