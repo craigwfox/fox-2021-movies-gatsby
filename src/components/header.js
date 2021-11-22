@@ -5,35 +5,10 @@ import { Link } from "gatsby"
 import headerLogo from "../images/popcorn.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      display: "grid",
-      placeContent: "center",
-      padding: "1.5rem",
-      marginBottom: `1.45rem`,
-      background: `hsl(var(--clr-bg))`,
-    }}
-  >
+  <header className="site-header">
     <h1 style={{ margin: 0 }}>
-      <Link
-        to="/"
-        style={{
-          color: `var(--clr-t-title)`,
-          textDecoration: `none`,
-          display: `flex`,
-          justifyContent: `center`,
-          alignItems: `center`,
-        }}
-      >
-        <img
-          src={headerLogo}
-          alt="A bucket of popcorn"
-          style={{
-            width: `3rem`,
-            margin: `0 1.5rem 0 0`,
-            flex: `0 0 auto`,
-          }}
-        />
+      <Link to="/" className="site-logo">
+        <img src={headerLogo} alt="A bucket of popcorn" className="site-logo" />
         {siteTitle}
       </Link>
     </h1>

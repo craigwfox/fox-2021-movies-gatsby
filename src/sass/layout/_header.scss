@@ -4,6 +4,31 @@
 // ======---------------------------------======
 // ---------------------------------------------
 
+.site-header {
+  display: grid;
+  placecontent: center;
+  padding: 1.5rem;
+  marginbottom: 1.45rem;
+  background: hsl(var(--clr-bg));
+}
+
+.site-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--clr-t-title);
+  text-decoration: none;
+
+  img {
+    width: 3rem;
+
+    flex-direction: 0 0 auto;
+
+    margin: 0 1.5rem 0 0;
+  }
+}
+
 // ====---------------====
 // Navigation
 // ====---------------====
