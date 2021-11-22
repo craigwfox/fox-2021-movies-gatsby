@@ -1,0 +1,24 @@
+// ---------------------------------------------
+// ======---------------------------------======
+//  Footer
+// ======---------------------------------======
+// ---------------------------------------------
+.site-footer {
+  grid-area: footer;
+
+  padding: 2rem 2rem;
+
+  background-color: hsl(var(--clr-bg));
+
+  color: var(--clr-border);
+  text-align: center;
+
+  a {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: var(--clr-t-accent);
+    }
+  }
+}

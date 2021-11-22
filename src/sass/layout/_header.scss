@@ -5,10 +5,12 @@
 // ---------------------------------------------
 
 .site-header {
+  grid-area: header;
   display: grid;
-  placecontent: center;
+  place-content: center;
+
   padding: 1.5rem;
-  marginbottom: 1.45rem;
+
   background: hsl(var(--clr-bg));
 }
 

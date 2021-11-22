@@ -11,7 +11,19 @@ body {
 }
 
 #___gatsby {
+  height: 100vh;
 }
 
 #gatsby-focus-wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.main {
+  grid-area: main;
+  padding: 0 2rem;
 }
