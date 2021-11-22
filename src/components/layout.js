@@ -30,9 +30,13 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <footer className="site-footer">
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <p>
+          © {new Date().getFullYear()}, Built by
+          {` `}
+          <a href="https://craigwfox.com">Craig Fox</a>
+          {` `}
+          using Gatsby and Netlify
+        </p>
       </footer>
     </>
   )
