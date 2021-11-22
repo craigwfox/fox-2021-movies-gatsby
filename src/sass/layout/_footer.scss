@@ -8,17 +8,21 @@
 
   padding: 2rem 2rem;
 
-  background-color: hsl(var(--clr-bg));
+  background-color: hsl(var(--clr-dark));
 
-  color: var(--clr-border);
+  color: hsl(var(--clr-border));
   text-align: center;
 
+  p {
+    margin: 0;
+  }
+
   a {
-    color: var(--clr-t-title);
+    color: hsl(var(--clr-t-title));
 
     &:hover,
     &:focus {
-      color: var(--clr-t-accent);
+      color: hsl(var(--clr-t-accent));
     }
   }
 }
