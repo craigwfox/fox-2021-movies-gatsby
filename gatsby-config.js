@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Foxy Movies of 2021`,
-    description: `Movies the Foxes watched during 2021`,
+    description: `All the things the Foxes watched in 2021`,
     author: `@craigwfox`,
     siteUrl: `https://movies.craigwfox.com/`,
   },
