@@ -14,6 +14,7 @@ const Header = ({ siteTitle, siteDescription }) => (
     <nav className="nav-main">
       <Link to="/">Home</Link>
       <Link to="/support/about">About</Link>
+      <Link to="/posts/">Posts</Link>
     </nav>
   </header>
 )
