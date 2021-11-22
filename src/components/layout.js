@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Archive from "./archive"
 import "../sass/styles.scss"
 
 const Layout = ({ children }) => {
@@ -31,7 +32,8 @@ const Layout = ({ children }) => {
         siteDescription={data.site.siteMetadata?.description || `Description`}
       />
       <main id="maincontent" className="main">
-        {children}
+        <section className="content">{children}</section>
+        <Archive />
       </main>
       <footer className="site-footer">
         <p>
