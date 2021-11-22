@@ -18,11 +18,11 @@
   }
 
   a {
-    color: hsl(var(--clr-t-title));
+    color: hsl(var(--clr-t-accent));
 
     &:hover,
     &:focus {
-      color: hsl(var(--clr-t-accent));
+      color: hsl(var(--clr-t-title));
     }
   }
 }
