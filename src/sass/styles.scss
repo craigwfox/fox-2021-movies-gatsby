@@ -4,3 +4,15 @@
 //  This should be used for imports of partials only
 // ======---------------------------------======
 // ---------------------------------------------
+
+// ====---------------====
+// Support
+// ====---------------====
+@import "./support/variables";
+@import "./support/reset";
+
+// ====---------------====
+// Layout
+// ====---------------====
+@import "layout/base";
+@import "layout/header";
