@@ -605,3 +605,17 @@ pre tt:after {
   --font-accent: 'Roboto Condensed', sans-serif;
   --font-display: 'Alfa Slab One', cursive;
 }
+
+.nav-main {
+  display: flex;
+  place-content: center;
+  gap: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+.nav-main a {
+  color: var(--clr-border);
+  font-family: var(--font-accent);
+  font-weight: 700;
+}

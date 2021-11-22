@@ -37,9 +37,8 @@ const Header = ({ siteTitle }) => (
         {siteTitle}
       </Link>
     </h1>
-    <nav style={{
-      padding: `1rem 0 0`
-    }}>
+    <nav className="nav-main">
+      <Link to="/">Home</Link>
       <Link to="/support/about">About</Link>
     </nav>
   </header>
