@@ -26,10 +26,10 @@ const Archive = () => {
 
   return (
     <>
-      <aside>
+      <aside className="sidebar-posts">
         <h3>Archive</h3>
         {data.allMarkdownRemark.edges.map(edge => (
-          <article key={edge.node.frontmatter.slug}>
+          <article className="post-list" key={edge.node.frontmatter.slug}>
             <h4>
               <Link to={`/posts${edge.node.frontmatter.slug}`}>
                 {edge.node.frontmatter.title}

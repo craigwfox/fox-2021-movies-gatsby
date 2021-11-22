@@ -1,0 +1,44 @@
+// ---------------------------------------------
+// ======---------------------------------======
+//  Articles
+// ======---------------------------------======
+// ---------------------------------------------
+
+.post-list {
+  display: grid;
+  grid-template-areas: "date" "title" "content";
+  gap: 0.5rem;
+
+  h4 {
+    grid-area: title;
+    margin: 0 0 0.5rem;
+
+    color: hsl(var(--clr-t-accent));
+    font-size: 1.2rem;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  time {
+    grid-area: date;
+    display: flex;
+    justify-self: flex-start;
+
+    padding: 0.2rem 0.75rem;
+
+    border-radius: 10rem;
+    background: hsl(var(--clr-dark));
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  p {
+    grid-area: content;
+
+    line-height: 1.5;
+  }
+}
