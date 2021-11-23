@@ -14,7 +14,6 @@ const POST_ARCHIVE_QUERY = graphql`
             slug
             date(formatString: "MMMM DD, YYYY")
           }
-          excerpt
         }
       }
     }
@@ -29,14 +28,16 @@ const Archive = () => {
       <aside className="sidebar-posts">
         <h3>Archive</h3>
         {data.allMarkdownRemark.edges.map(edge => (
-          <article className="post-list" key={edge.node.frontmatter.slug}>
-            <h4>
+          <article
+            className="post post--sidebar"
+            key={edge.node.frontmatter.slug}
+          >
+            <h4 className="post-title">
               <Link to={`/posts${edge.node.frontmatter.slug}`}>
                 {edge.node.frontmatter.title}
               </Link>
             </h4>
-            <time>{edge.node.frontmatter.date}</time>
-            <p>{edge.node.excerpt}</p>
+            <time className="post-date">{edge.node.frontmatter.date}</time>
           </article>
         ))}
       </aside>
