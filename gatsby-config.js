@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Foxy Movies of 2021`,
-    description: `Movies we watched over the course of 2021`,
+    description: `All the things the Foxes watched in 2021`,
     author: `@craigwfox`,
     siteUrl: `https://movies.craigwfox.com/`,
   },
@@ -14,6 +14,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -36,6 +43,17 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         implementation: require("sass"),
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Archive from "./archive"
 import "../sass/styles.scss"
 
 const Layout = ({ children }) => {
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
@@ -25,14 +27,22 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+        siteDescription={data.site.siteMetadata?.description || `Description`}
+      />
       <main id="maincontent" className="main">
-        {children}
+        <section className="content">{children}</section>
+        <Archive />
       </main>
       <footer className="site-footer">
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <p>
+          © {new Date().getFullYear()}, Built by
+          {` `}
+          <a href="https://craigwfox.com">Craig Fox</a>
+          {` `}
+          using Gatsby and Netlify
+        </p>
       </footer>
     </>
   )
