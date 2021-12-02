@@ -11,6 +11,7 @@ specifiers:
   gatsby-plugin-image: ^2.3.0
   gatsby-plugin-manifest: ^4.3.0
   gatsby-plugin-offline: ^5.3.0
+  gatsby-plugin-pnpm: ^1.2.9
   gatsby-plugin-react-helmet: ^5.3.0
   gatsby-plugin-sass: ^5.3.0
   gatsby-plugin-sharp: ^4.3.0
@@ -35,6 +36,7 @@ dependencies:
   gatsby-plugin-image: 2.3.0_31fde8a1e7e82bd9ae53ed8e067e70bb
   gatsby-plugin-manifest: 4.3.0_gatsby@4.3.0
   gatsby-plugin-offline: 5.3.0_ebdf6a49a7628b6089318812aa4dc21a
+  gatsby-plugin-pnpm: 1.2.9_gatsby@4.3.0
   gatsby-plugin-react-helmet: 5.3.0_gatsby@4.3.0+react-helmet@6.1.0
   gatsby-plugin-sass: 5.3.0_gatsby@4.3.0+sass@1.44.0
   gatsby-plugin-sharp: 4.3.0_gatsby@4.3.0
@@ -5939,6 +5941,16 @@ packages:
       lodash: 4.17.21
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /gatsby-plugin-pnpm/1.2.9_gatsby@4.3.0:
+    resolution: {integrity: sha512-udnYlK07yuprdPKXfrZxKEm+C/2P0DNU59HSPn6WUaCDOwJx7+5hmuOVjGx8lltU+xjRsGghAN5YDndOe/HiGg==}
+    peerDependencies:
+      gatsby: ~2.x.x || ~4.x.x
+    dependencies:
+      gatsby: 4.3.0_react-dom@17.0.2+react@17.0.2
+      lodash.get: 4.4.2
+      lodash.uniq: 4.5.0
     dev: false
 
   /gatsby-plugin-react-helmet/5.3.0_gatsby@4.3.0+react-helmet@6.1.0:
