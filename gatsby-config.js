@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://movies.craigwfox.com/`,
   },
   plugins: [
+    'gatsby-plugin-pnpm',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
